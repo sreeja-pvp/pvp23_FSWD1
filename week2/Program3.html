@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Frames</title>
+</head>
+<frameset rows="30%, 40%, 30%" border="2">
+    <!-- First Frame -->
+    <frame src="image_frame.html" name="frame1" scrolling="no">
+    <!-- Second Frame -->
+    <frame src="paragraph_frame.html" name="frame2" scrolling="auto">
+    <!-- Third Frame -->
+    <frame src="link_frame.html" name="frame3" scrolling="auto">
+    <!-- No Frames -->
+    <noframes>
+        <body>
+            <p>Sorry, your browser does not support frames.</p>
+        </body>
+    </noframes>
+</frameset>
+</html>

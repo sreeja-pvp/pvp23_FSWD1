@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <!-- Internal CSS: Inside <style> tags -->
+    <style>
+        /* Internal CSS: Selector - body, property - background-color, value - #f0f0f0 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Internal CSS: Selector - .login-container, property - width, padding, margin */
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Internal CSS: Selector - .form-container, property - padding */
+        .form-container {
+            padding: 15px;
+        }
+
+        /* Internal CSS: Selector - input[type="text"], input[type="password"] */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px; /* Increased padding for more space */
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Internal CSS: Selector - .login-btn, property - background-color, color, padding */
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Internal CSS: Selector - h2, property - text-align */
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Internal CSS: Selector - label, property - font-weight */
+        label {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- External CSS (This can be linked to an external stylesheet) -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Login form container -->
+    <div class="login-container">
+        <!-- Title for the login form -->
+        <h2>Login</h2>
+
+        <!-- Form Container: Holds the form elements -->
+        <div class="form-container">
+            <form action="/submit" method="POST">
+                <!-- Username Field -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <!-- Submit Button -->
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

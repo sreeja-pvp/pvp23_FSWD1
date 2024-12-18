@@ -1,0 +1,127 @@
+<!-- 
+ Write a HTML program, to explain the working of tables by preparing a
+timetable. (Note: Use <caption> tag to set the caption to the table & also use
+cell spacing, cell padding, border, rowspan, colspan etc.).
+
+<caption>: Provides a descriptive title for the table.
+border, cellspacing, and cellpadding Attributes :
+border: Adds a border to the table.
+cellspacing: Controls the spacing between cells.
+cellpadding: Adds space inside the cells.
+rowspan and colspan:
+rowspan: Merges cells vertically (used for BREAK and header rows).
+colspan: Merges cells horizontally (used for Technical Training sessions).
+Alignment: 
+align="center" is used to center-align cell content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+</head>
+<body>
+    <h1>Class Timetable</h1>
+
+    <table border="1" cellspacing="2" cellpadding="10" >
+        <!-- Table Caption -->
+        <caption><strong>Class Timetable for III B.Tech II Semester</strong></caption>
+        
+        <!-- Table Header -->
+        <tr>
+            <th>Day/Time</th>
+            <th>09:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-01:00</th>
+            <th>01:00-02:00</th>
+            <th>02:00-03:00</th>
+            <th>03:00-04:00</th>
+            <th>04:00-05:00</th>
+        </tr>
+        
+        <!-- Monday -->
+        <tr>
+            <td>Monday</td>
+            <td colspan="3" align="center">Technical Training</td>
+            <td align="center" rowspan="6">BREAK</td>
+            <td colspan="4" align="center">Technical Training</td>
+            
+        </tr>
+        
+        <!-- Tuesday -->
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3" align="center">Technical Training</td>
+            
+            <td colspan="4" align="center">Technical Training</td>
+            
+        </tr>
+        
+        <!-- Wednesday -->
+        <tr>
+            <td>Wednesday</td>
+            <td align="center">BDA</td>
+            <td align="center" colspan="2">SS</td>
+            
+           
+            <td align="center">STM</td>
+            <td align="center"colspan="3">DA Lab</td>
+           
+        </tr>
+        
+        <!-- Thursday -->
+        <tr>
+            <td>Thursday</td>
+            <td align="center">CNS</td>
+            <td align="center">STM</td>
+            <td align="center">SS</td>
+            
+            <td align="center">DL</td>
+            <td colspan="3" align="center">FSWD-II</td>
+        </tr>
+        
+        <!-- Friday -->
+        <tr>
+            <td>Friday</td>
+            <td align="center">CNS</td>
+            <td align="center">HFE</td>
+            <td align="center">DL</td>
+            
+            <td align="center">BDA</td>
+            <td align="center">COI</td>
+            <td align="center">STM</td>
+            <td align="center">HFE</td>
+        </tr>
+        
+        <!-- Saturday -->
+        <tr>
+            <td>Saturday</td>
+            <td align="center" colspan="3">DL Lab</td>
+            
+           
+            <td align="center">BDA</td>
+            <td align="center">HFE</td>
+            <td align="center">CNS</td>
+            <td align="center">DL</td>
+        </tr>
+    </table>
+
+    <p><strong>Subject Codes and Faculty Names:</strong></p>
+    <ul>
+        <li><strong>CNS:</strong> Cryptography and Network Security - Mr. K.S.S. Narayana</li>
+        <li><strong>BDA:</strong> Big Data Analytics - Mr. B.K. Chakravarthy</li>
+        <li><strong>DL:</strong> Deep Learning - Mrs. N. Susmitha</li>
+        <li><strong>STM:</strong> Software Testing Methodologies - Mrs. Srilakshmi Vani</li>
+        <li><strong>HFE:</strong> Human Factors in Engineering - Mr. N. Raghuram</li>
+        <li><strong>COI:</strong> Constitution of India - Mrs. M. Ambika</li>
+        <li><strong>SS:</strong> Soft Skills - Mrs. L. Sudheera</li>
+        <li><strong>DA Lab:</strong> Data Analytics Lab - Mr. B.K. Chakravarthy</li>
+        <li><strong>FSWD-II:</strong> Full Stack Web Development - II - Mrs. Sreeja</li>
+    </ul>
+
+    <p><strong>Class Coordinator:</strong> Mr. K.S.S. Narayana</p>
+</body>
+</html>
